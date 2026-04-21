@@ -1,10 +1,20 @@
 # Obie QA Engineer - Take-Home Challenge
 
-Welcome! This repo contains **Obie**, a small insurance management application with a React frontend and Node.js API backend. Your task is to write end-to-end tests using **Playwright** and **TypeScript**.
+> **Getting Started:** This repo was created from the [ObieCRE/qa-take-home-challenge](https://github.com/ObieCRE/qa-take-home-challenge) template.
+>
+> To create your own copy:
+> 1. Click **"Use this template"** → **"Create a new repository"**
+> 2. Enter a **Repository name** and set visibility to **Private**
+> 3. Click **"Create Repository"**
+> 4. Clone your newly-created repository to your local machine
+>
+> The instructions below cover everything needed to complete the challenge.
+
+Welcome! This repo contains a small insurance management application with a React frontend and Node.js API backend. Your task is to write end-to-end tests using **Playwright** and **TypeScript**.
 
 ## The Application
 
-Obie lets insurance professionals manage policies and claims. It includes:
+The app lets insurance professionals manage policies and claims. It includes:
 
 | Page                    | Description                                                             |
 | ----------------------- | ----------------------------------------------------------------------- |
