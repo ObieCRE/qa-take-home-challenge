@@ -152,7 +152,7 @@ All API routes require a `Bearer` token (obtained via login) except `/api/auth/l
 ## Tips
 
 - The app uses `data-testid` attributes on key elements - use them!
-- The backend stores data in-memory, so it resets on restart
+- The backend stores data in-memory, so it resets on restart. **The test data is fixed and deterministic** — the same policies, claims, and dollar amounts will be there every time. Feel free to assert against specific values (totals, counts, policy numbers, etc.). We'd rather see tests that verify real business logic than ones that only check "something rendered."
 - Playwright's [auto-waiting](https://playwright.dev/docs/actionability) handles most timing issues - avoid explicit waits
 - Consider using [Playwright fixtures](https://playwright.dev/docs/test-fixtures) for auth state
 
