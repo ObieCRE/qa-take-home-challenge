@@ -4,7 +4,10 @@ import { requireAuth } from "../middleware/auth.js";
 
 const router = Router();
 
-router.get("/", requireAuth, (req, res) => {
+router.get("/", requireAuth, async (req, res) => {
+  // Simulate real-world API latency
+  await new Promise((r) => setTimeout(r, 200 + Math.random() * 600));
+
   let result: Policy[] = [...policies];
 
   const { status, lineOfBusiness, search, sortBy, sortOrder } = req.query;
