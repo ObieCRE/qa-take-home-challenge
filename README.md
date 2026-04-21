@@ -43,7 +43,7 @@ corepack enable
 yarn
 
 # Install Playwright browsers
-yarn playwright install
+yarn playwright install chromium
 
 # Start both servers (API :3100, Web :3200)
 yarn dev
